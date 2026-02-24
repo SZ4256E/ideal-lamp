@@ -64,3 +64,27 @@ orderBtn.addEventListener("click", () => {
 
   window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
 });
+let cart = [];
+
+function addToCart(product) {
+  cart.push(product);
+  renderCart();
+}
+
+function removeFromCart(index) {
+  cart.splice(index, 1); // كتحيد المنتج حسب الرقم ديالو
+  renderCart();
+}
+
+function renderCart() {
+  const cartContainer = document.getElementById("cart");
+  cartContainer.innerHTML = ""; // كيمسح القديم
+  cart.forEach((item, index) => {
+    const div = document.createElement("div");
+    div.innerHTML = `
+      ${item.name} - ${item.price} MAD
+      <button onclick="removeFromCart(${index})">حذف</button>
+    `;
+    cartContainer.appendChild(div);
+  });
+}
