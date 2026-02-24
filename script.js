@@ -2,12 +2,12 @@
 const whatsappNumber = "0684686562";
 
 const products = [
-  { name: "ملصق أنمي 1", price: 20, image: "img/sticker1.jpg" },
-  { name: "ملصق أنمي 2", price: 25, image: "img/sticker2.jpg" },
+  { name: "ملصق أنمي 1", price: 15, image: "img/sticker1.jpg" },
+  { name: "ملصق أنمي 2", price: 15, image: "img/sticker2.jpg" },
   { name: "ملصق أنمي 3", price: 15, image: "img/sticker3.jpg" },
-  { name: "ملصق أنمي 4", price: 30, image: "img/sticker4.jpg" },
-  { name: "ملصق أنمي 5", price: 18, image: "img/sticker5.jpg" },
-  { name: "ملصق أنمي 6", price: 22, image: "img/sticker6.jpg" } // مثال إضافة
+  { name: "ملصق أنمي 4", price: 15, image: "img/sticker4.jpg" },
+  { name: "ملصق أنمي 5", price: 15, image: "img/sticker5.jpg" },
+  { name: "ملصق أنمي 6", price: 15, image: "img/sticker6.jpg" } // مثال إضافة
 ];
 
 const productsContainer = document.getElementById("products");
